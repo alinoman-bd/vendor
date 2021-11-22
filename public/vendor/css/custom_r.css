@@ -1,0 +1,122 @@
+.input-search-box {
+  display: none;
+  position: absolute;
+  left: 0;
+  width: 100%;
+  background: #fff;
+  z-index: 9;
+  border-bottom: 1px solid #ddd;
+  box-shadow: 0 4px 12px #ddd;
+  border-radius: 5px;
+  top: 40px;
+  max-height: 450px;
+  overflow-y: auto;
+}
+.input-cnt {
+  padding: 5px 10px;
+  border-bottom: 1px solid #ddd;
+  cursor: pointer;
+}
+.input-cnt:hover {
+  background: #ddd;
+}
+
+.menu-search {
+  border: 1px solid #ada9a94f;
+  border-radius: 5px;
+}
+.menu-search_input {
+  outline: none;
+  border: none;
+}
+
+.manu-show-btn {
+  position: absolute;
+  right: 0;
+  height: 25px;
+  width: 25px;
+  line-height: 25px;
+  text-align: center;
+  border: 1px solid #ddd;
+  z-index: 0;
+  top: 10px;
+  cursor: pointer;
+}
+.manu-show-btn:hover {
+  background: #007526;
+  color: #fff;
+}
+.side_nav {
+  padding: 0 0 20px 0;
+}
+.side_nav .side_nav__items {
+  width: 100%;
+  padding: 0 0 1px 0;
+  position: relative;
+}
+.side_nav .side_nav__links {
+  color: #007526;
+  font-size: 14px;
+  text-decoration: none;
+  padding: 11px 15px 11px 20px;
+  display: block;
+}
+.side_ul_in {
+  display: none;
+}
+.side_nav .side_nav__links:hover {
+  text-decoration: underline;
+}
+.side_nav .side_nav__links.active {
+  font-weight: 700;
+  text-decoration: underline;
+}
+.side_nav .side_nav__items_in .side_nav__links {
+  padding: 7px 0 7px 16%;
+}
+.sidebar h3 {
+  color: #fff;
+  font-size: 14px;
+  font-weight: bold;
+  background: #32922e;
+  padding: 11px 10px 11px 20px;
+}
+.side_nav__items:after {
+  width: 100%;
+  height: 1px;
+  content: '';
+  background: linear-gradient(to right, #bfd1e5, #f9fafc);
+  position: absolute;
+  left: 0;
+  bottom: 0;
+}
+.side_nav__items_in.side_nav__items:after {
+  display: none;
+}
+.side_nav__items_out.active .side_ul_in {
+  display: block;
+}
+.side_nav__items_out.active .manu-show-btn i {
+  transform: rotate(180deg);
+}
+
+.side_nav__items_out.active .side_nav__links_out {
+  font-weight: 700;
+  text-decoration: underline;
+}
+.no-data {
+  margin: auto;
+  color: rebeccapurple;
+  font-size: 20px;
+  font-style: italic;
+}
+
+.main-menu .nav-pills .nav-link.active,
+.main-menu .nav-pills .show > .nav-link {
+  background-color: white !important;
+}
+.search-close-button {
+  float: right;
+  position: relative;
+  z-index: 1;
+}
